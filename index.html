@@ -12,34 +12,56 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
-  <link rel="stylesheet" href="css/index.scss"/>
+  <link rel="stylesheet" href="css/reset.css"/>
+  <link rel="stylesheet" href="css/owl/owl.carousel.css"/>
+  <!--<link rel="stylesheet" href="css/owl/owl.theme.css"/>-->
+  <link rel="stylesheet" href="css/index.css"/>
 </head>
 <body>
-<div class="container"><canvas width="640" height="600" id="fishtank"></canvas></div>
+<div class="wrapper">
+
+  <ul class="sidebar">
+    <li id="menu1"><img src="img/bamboo1.png" alt=""/></li>
+    <li id="menu2"><img src="img/bamboo2.png" style="margin-left: 6px;" alt=""/></li>
+    <li id="menu3"><img src="img/bamboo3.png" alt=""/></li>
+  </ul>
+
+  <div class="cloud"></div>
+
+  <div id="carouselOuterContainer">
+    <div id="carouselContainer">
+      <img class="owl-lazy" style="width:250px" data-src="img/photos/1.png" alt="">
+      <img class="owl-lazy" style="width:250px" data-src="img/photos/2.png" alt="">
+      <img class="owl-lazy" style="width:250px" data-src="img/photos/3.png" alt="">
+      <img class="owl-lazy" style="width:250px" data-src="img/photos/4.jpg" alt="">
+      <img class="owl-lazy" style="width:250px" data-src="img/photos/5.jpg" alt="">
+    </div>
+  </div>
+
+  <div id="imgDetail">
+    <input type="button" class="btn-close" value="关闭"/>
+    <div class="current-img"></div>
+    <input type="button" class="btn btn-continue" value="继续播放"/>
+  </div>
+
+  <div class="text">祝福语</div>
+
+  <div class="lake">
+    <img id="shadow" src="img/shadow.png"/>
+    <img id="stone1" src="img/stone1.png"/>
+    <img id="stone2" src="img/stone2.png"/>
+    <img id="stone3" src="img/stone3.png"/>
+  </div>
+</div>
 
 
-<script type="text/javascript">
-//  var ua = navigator.userAgent.toLowerCase();
-//  var t = document.documentElement.offsetWidth;
-//  var w = 640;
-//  var sw = window.innerWidth;
-//  var sca = sw/640;
-//  sca=sca.toFixed(3);
-//  var zoom = sca * 100;
-//
-//  if (/(iphone|ipod|ipad)/i.test(ua)) {
-//    vp.content='width='+w+',initial-scale = '+sca+' ,minimum-scale='+sca+', maximum-scale='+sca;
-//  }else if(/(android)/i.test(ua)) {
-//    $(document).ready(function(){
-//      document.body.style.zoom = zoom+"%";
-//    });
-//    $(window).on('resize', function(){
-//      document.body.style.zoom = zoom+"%";
-//    });
-//  }
-</script>
 <script src="lib/jquery.min.js"></script>
-<script src="js/fish.js"></script>
+<script src="lib/owl.carousel.js"></script>
+<script src="lib/rotate3Di.min.js"></script>
+<script src="lib/3d-falling-leaves.js"></script>
+<script src="lib/lake.js"></script>
+<script src="js/photos.js"></script>
+
 <script src="js/index.js"></script>
 </body>
 </html>

@@ -1,0 +1,177 @@
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 62.5%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+body {
+  vertical-align: baseline;
+  font-size: 16px;
+  font-size: 1.6rem;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  color: #333333;
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background: #939FC2;
+}
+@media screen and (max-width: 30em) {
+  body {
+    -webkit-hyphens:auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto
+  }
+}
+/*@media all and (max-width: 320px){*/
+  /*html {*/
+    /*font-size: 62.5%;*/
+  /*}*/
+/*}*/
+/*@media all and (min-width: 321px){*/
+  /*html {*/
+    /*font-size: 70.3%;*/
+  /*}*/
+/*}*/
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  background: url("../img/bg.png");
+  background-size: 100% 100%;
+}
+
+.sidebar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+}
+.sidebar li {
+  width: 100%;
+}
+.sidebar li img {
+  display: block;
+  width: 100%;
+}
+
+
+#carouselOuterContainer {
+  width: 280px;
+  height: 280px;
+  background: #F9F3A0;
+  border-radius: 50%;
+  position: absolute;
+  left: 125px;
+  top: -50px;
+}
+#carouselContainer {
+  width: 250px;
+  height: 250px;
+  margin: 15px auto;
+}
+#carouselContainer .owl-item img{
+  border-radius: 50%;
+}
+
+#imgDetail {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+  left: 0;
+  top: 0;
+  z-index: 11111;
+}
+.current-img {
+  position: absolute;
+  left: 50%;
+  top: 200px;
+  width: 80%;
+  margin-left: -40%;
+}
+.current-img img {
+  display: block;
+  width: 100%;
+}
+
+.btn-close {
+  right: 10%;
+  top:30px;
+  position: absolute;
+}
+.btn {
+  position: absolute;
+  border: 0;
+  width: 100px;
+  left: 50%;
+  bottom: 50px;
+  margin-left: -50px;
+  background: #FFFFFF;
+  color: #333333;
+}
+
+
+.october-leaf {
+  position: absolute;
+  background-color: transparent;
+  background-image: url('../img/leaf1.png');
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+
+.cloud {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 242px;
+  background: url("../img/cloud.png") repeat;
+}
+
+.text {
+  font-size: 30px;
+  position: absolute;
+  right: 40px;
+  bottom: 400px;
+}
+
+.lake {
+  position: absolute;
+  right: 115px;
+  bottom: 30px;
+  width: 267px;
+}
+.lake #shadow {
+  width: 100%;
+}
+.lake #stone1 {
+  position: absolute;
+  left: 115px;
+  top: -40px;
+}
+.lake #stone2 {
+  position: absolute;
+  left: 160px;
+  top: -6px;
+}
+.lake #stone3 {
+  position: absolute;
+  left: 20px;
+  top: 80px;
+}

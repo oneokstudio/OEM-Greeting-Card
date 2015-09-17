@@ -9,22 +9,23 @@
  });
 
  fis.match('js/*.js', {
-   optimizer: fis.plugin('uglify-js'),
+   //optimizer: fis.plugin('uglify-js'),
    release : '$&',
    useHash: true
  });
 
- fis.match('css/*.scss', {
-   useSprite: true,
-   release : '$&',
-   useHash: true,
-   parser: fis.plugin('sass'),
-   rExt: '.css'
- });
+ //fis.match('css/*.scss', {
+ //  useSprite: true,
+ //  release : '$&',
+ //  useHash: true,
+ //  parser: fis.plugin('sass'),
+ //  rExt: '.css'
+ //});
 
  fis.match('*.css', {
-   useSprite: true,
    optimizer: fis.plugin('clean-css'),
+   release : '$&',
+   useSprite: true,
    useHash: true
  });
 
