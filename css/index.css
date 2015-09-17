@@ -64,6 +64,14 @@ body {
   display: block;
   width: 100%;
 }
+.leave-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.leave-right img {
+  width: 100%;
+}
 
 
 #carouselOuterContainer {
