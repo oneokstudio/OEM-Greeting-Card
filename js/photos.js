@@ -10,7 +10,7 @@
     autoplay: true,
     items: 1,
     lazyLoad:true,
-    autoplayTimeout: 2000
+    autoplayTimeout: 3000
   });
   owl.on('drag.owl.carousel', function (e) {
     owl.trigger('stop.owl.autoplay')
