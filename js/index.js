@@ -4,7 +4,7 @@ $(function () {
 
   $(document).octoberLeaves({
     leafStyles: 1,
-    numberOfLeaves: 5,
+    numberOfLeaves: 3,
     cycleSpeed: 40
   })
   $(document).octoberLeaves('start');
