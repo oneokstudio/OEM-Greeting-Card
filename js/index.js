@@ -75,7 +75,6 @@ $(function () {
         //}, 1500);
         $this.fadeIn('slow');
       }, 1500*index);
-      console.log(index);
     })
   }
 })

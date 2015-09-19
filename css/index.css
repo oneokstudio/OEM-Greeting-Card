@@ -158,6 +158,7 @@ body {
   width: 267px;
   height: 150px;
   background: url("../img/shadow.png");
+  z-index: 100;
 }
 .lake #shadow {
   width: 100%;
@@ -178,9 +179,9 @@ body {
   top: 80px;
 }
 
-#fish {
+#fishContainer {
   position: absolute;
-  right: 300px;
+  right: 600px;
   bottom: 300px;
 }
 
