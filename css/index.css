@@ -181,3 +181,9 @@ body {
   left: 20px;
   top: 80px;
 }
+
+#fish {
+  position: absolute;
+  right: 300px;
+  bottom: 300px;
+}

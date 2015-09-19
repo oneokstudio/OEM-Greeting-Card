@@ -2,12 +2,12 @@ $(function () {
   var windowH = $(window).height();
   $('.wrapper').height(windowH);
 
-  $(document).octoberLeaves({
+  $('.sidebar').octoberLeaves({
     leafStyles: 1,
-    numberOfLeaves: 3,
+    numberOfLeaves: 2,
     cycleSpeed: 40
   })
-  $(document).octoberLeaves('start');
+  $('.sidebar').octoberLeaves('start');
 
   var animate = $('.cloud');
   function loopbackground() {
