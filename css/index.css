@@ -55,7 +55,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 200px;
+  width: 316px;
 }
 .sidebar li {
   width: 100%;
@@ -87,6 +87,7 @@ body {
   width: 250px;
   height: 250px;
   margin: 15px auto;
+  display: none;
 }
 #carouselContainer .owl-item img{
   border-radius: 50%;
@@ -150,18 +151,13 @@ body {
   background: url("../img/cloud.png") repeat;
 }
 
-.text {
-  font-size: 30px;
-  position: absolute;
-  right: 40px;
-  bottom: 400px;
-}
-
 .lake {
   position: absolute;
   right: 115px;
   bottom: 30px;
   width: 267px;
+  height: 150px;
+  background: url("../img/shadow.png");
 }
 .lake #shadow {
   width: 100%;
@@ -186,4 +182,39 @@ body {
   position: absolute;
   right: 300px;
   bottom: 300px;
+}
+
+.poem {
+  display: block;
+  margin-top: 67px;
+  margin-right: 53px;
+}
+.poem .v-item {
+  width: 20px;
+  display: none;
+  font-size: 16px;
+}
+
+.text {
+  font-size: 18px;
+  position: absolute;
+  right: 50px;
+  top: 245px;
+}
+.text .v-item {
+  width: 25px;
+  text-align: center;
+  border-left: solid 1px #333;
+}
+
+.vertical {
+  overflow: hidden;
+}
+.vertical .v-item {
+  float: right;
+}
+.vertical .v-item-space {
+  width: 20px;
+  float: right;
+  height: 100px;
 }
