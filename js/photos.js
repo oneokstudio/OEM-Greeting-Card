@@ -1,7 +1,7 @@
 function startCarousel () {
   var owl = $("#carouselContainer");
   var currentIndex = 3;
-  var currentSrc = '';
+  var currentSrc = '../img/photos/1.jpg';
   var $imgDetail = $('#imgDetail');
   var $currentImgDom = $imgDetail.find('.current-img');
 
@@ -34,12 +34,10 @@ function startCarousel () {
     owl.trigger('play.owl.autoplay');
   });
   $('.btn-continue').click(function () {
-    console.log('img continue');
     owl.trigger('play.owl.autoplay');
   });
   $currentImgDom.click(function () {
     owl.trigger('pause.owl.autoplay');
-    console.log('img dom');
   });
 
   function showImgDetail() {

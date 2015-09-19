@@ -41,6 +41,7 @@ body {
   margin: 0 auto;
   background: url("../img/bg.png");
   background-size: 100% 100%;
+  overflow: hidden;
 }
 
 .wrapper-inner {
@@ -56,6 +57,7 @@ body {
   bottom: 0;
   left: 0;
   width: 316px;
+  z-index: 100;
 }
 .sidebar li {
   width: 100%;
@@ -119,16 +121,19 @@ body {
   right: 10%;
   top:30px;
   position: absolute;
+  width: 28px;
+  height: 29px;
+  background: url("../img/btn_close.png");
 }
 .btn {
   position: absolute;
   border: 0;
-  width: 100px;
   left: 50%;
   bottom: 50px;
-  margin-left: -50px;
-  background: #FFFFFF;
-  color: #333333;
+  margin-left: -96px;
+  width: 192px;
+  height: 60px;
+  background: url("../img/btn_tbc.png");
 }
 
 
@@ -181,8 +186,9 @@ body {
 
 #fishContainer {
   position: absolute;
-  right: 600px;
-  bottom: 300px;
+  right: 400px;
+  bottom: 230px;
+  transform: scale(0.5, 0.5);
 }
 
 .poem {
@@ -201,11 +207,18 @@ body {
   position: absolute;
   right: 50px;
   top: 245px;
+  background: #C6CBDF;
+  width: 380px;
+  padding: 25px;
+  box-sizing: border-box;
+  border-radius: 50px;
+  z-index: 1111;
 }
-.text .v-item {
-  width: 25px;
-  text-align: center;
-  border-left: solid 1px #333;
+.text p {
+  text-decoration: underline;
+}
+.text .text-content {
+  margin: 30px auto;
 }
 
 .vertical {
@@ -218,4 +231,63 @@ body {
   width: 20px;
   float: right;
   height: 100px;
+}
+
+.slide {
+  background: #FFFFFF;
+  display: none;
+}
+.slide-item-content {
+  height: 900px;
+}
+.slide-item-content img{
+  width: 100%;
+  display: block;
+}
+.slide-menu {
+  position: absolute;
+}
+.slide-back {
+  width: 70px;
+  height: 70px;
+  right: 42px;
+  top: 40px;
+}
+.slide-forward {
+  width: 70px;
+  height: 50px;
+  left: 50%;
+  margin-left: -35px;
+  bottom: 40px;
+}
+.slide-close {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  font-size: 30px;
+  color: #fff;
+  background-color: rgba(51, 51, 51, 0.82);
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 111111;
+}
+
+.lotus {
+  position: absolute;
+  bottom: 230px;
+  left: 0px;
+  width: 100%;
+}
+
+.lotus .lotus-1 {
+  position: absolute;
+  right: -69px;
+  top: -268px;
+}
+.lotus .lotus-2 {
+  position: absolute;
+  left: 0;
 }
