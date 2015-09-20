@@ -44,6 +44,9 @@ var main = function () {
     $('.slide').hide();
     $('.feedback-container').show();
   });
+  $('#stone3').click(function () {
+    $('.share-mask').show();
+  });
 
   getText();
   animatePoem();

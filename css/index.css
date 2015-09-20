@@ -429,3 +429,23 @@ body {
   left: 11px;
   bottom: 26px;
 }
+
+.share-mask {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: 11111;
+}
+.share-tip {
+  position: absolute;
+  background: url(../img/share_text.png);
+  background-size: 484px;
+  width: 484px;
+  height: 210px;
+  top: 50px;
+  right: 50px;
+}
