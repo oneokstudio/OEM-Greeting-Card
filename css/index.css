@@ -84,13 +84,13 @@ body {
   position: absolute;
   left: 125px;
   top: -50px;
+  z-index: 111;
 }
 #carouselContainer {
   width: 250px;
   height: 250px;
   margin: 15px auto;
   display: none;
-  z-index: 111;
 }
 #carouselContainer .owl-item img{
   border-radius: 50%;
