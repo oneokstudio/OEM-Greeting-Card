@@ -1,7 +1,7 @@
 function startCarousel () {
   var owl = $("#carouselContainer");
   var currentIndex = 3;
-  var currentSrc = '../img/photos/1.jpg';
+  var currentSrc = './img/photos/1.jpg';
   var $imgDetail = $('#imgDetail');
   var $currentImgDom = $imgDetail.find('.current-img');
 
