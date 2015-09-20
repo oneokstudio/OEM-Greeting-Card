@@ -7,7 +7,6 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <!--<meta id="vp" name="viewport" content="width=640, user-scalable=no">-->
   <meta id="vp" name="viewport" content="width=device-width, user-scalable=no,maximum-scale=1.0,initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -86,7 +85,7 @@
 
   <div class="slide oem-content">
     <div class="slide-item">
-      <div class="slide-close">X</div>
+      <div class="slide-close"></div>
       <div class="slide-item-content">
         <img src="img/news/news1.png" alt=""/>
         <div class="slide-forward slide-menu"></div>
@@ -117,19 +116,52 @@
       <div class="slide-item-content">
         <img src="img/news/news5.png" alt=""/>
         <div class="slide-back slide-menu"></div>
+        <div class="slide-go-feedback"></div>
       </div>
     </div>
   </div>
 
   <div class="feedback-container modal">
-    <textarea name="feedback" id="feedback" class="form-control" data-name="反馈" cols="30" rows="10" placeholder="请说出您对会议的意见吧~"></textarea>
+    <div class="modal-bg">
+      <img src="img/modal_bg.png" alt=""/>
+    </div>
+    <div class="form-group first">
+      <label>1、在不久前的“智见2015” OEM 企业家俱乐部沙龙活动上，您对哪一类话题最感兴趣？</label>
+      <input type="radio" class="form-control" name="question1" value="A" checked/>A 智能设备解决方案<br/>
+      <input type="radio" class="form-control" name="question1" value="B"/>B 精益生产<br/>
+      <input type="radio" class="form-control" name="question1" value="C"/>C 提升能效管理水平<br/>
+      <input type="radio" class="form-control" name="question1" value="D"/>D 供应链服务支持<br/>
+    </div>
+    <div class="form-group">
+      <label>2、当前您最需要在哪方面得到提升和改善？</label>
+      <input type="radio" class="form-control" name="question2" value="A" checked/>A 产品性能及结构<br/>
+      <input type="radio" class="form-control" name="question2" value="B"/>B 设备调试和技术服务<br/>
+      <input type="radio" class="form-control" name="question2" value="C"/>C 软件和 IT 能力<br/>
+      <input type="radio" class="form-control" name="question2" value="D"/>D 资金和供应链<br/>
+    </div>
+    <div class="form-group">
+      <label>3、参加此次活动后，您有哪些感受？您认为活动有哪些值得改进的地方？</label>
+      <textarea name="feedback" id="feedback" class="form-control" data-name="反馈" cols="30" rows="10"></textarea>
+    </div>
+
     <div class="btn btn-submit">提交</div>
     <div class="modal-close">X</div>
   </div>
   <div class="custom-container modal">
-    <input type="text" id="custom-sender" class="form-control" data-name="寄信人" placeholder="寄信人名称"/>
-    <input type="text" id="custom-receiver" class="form-control" data-name="收信人" placeholder="收信人名称"/>
-    <textarea name="" id="custom-greeting" class="form-control" data-name="祝福语" cols="30" rows="10" placeholder="祝福语"></textarea>
+    <div class="modal-bg">
+      <img src="img/modal_bg.png" alt=""/>
+    </div>
+    <div class="form-group first">
+      <input type="text" id="custom-sender" class="form-control" data-name="寄信人" placeholder="寄信人名称"/>
+    </div>
+    <div class="form-group">
+      <input type="text" id="custom-receiver" class="form-control" data-name="收信人" placeholder="收信人名称"/>
+    </div>
+    <div class="form-group">
+      <textarea name="" id="custom-greeting" class="form-control" data-name="祝福语" data-length="100"
+                cols="30" rows="10" placeholder="在此填下您的祝福语吧~长度不能超过100字哦~"
+                style="height: 300px;"></textarea>
+    </div>
     <div class="btn btn-submit">提交</div>
     <div class="modal-close">X</div>
   </div>

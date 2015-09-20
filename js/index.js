@@ -22,12 +22,16 @@ var main = function () {
   $('#menu3').click(function () {
     $('.feedback-container').show();
   });
+  $('.slide-go-feedback').click(function () {
+    $('.slide').hide();
+    $('.feedback-container').show();
+  });
 
-  animatePoem();
   //startRipples();
-  startCloud();
-  startLeaves();
-  startFish();
+  animatePoem();
+  //startCloud();
+  //startLeaves();
+  //startFish();
   Slide.init();
 
   //WX.init({
