@@ -318,3 +318,14 @@ body {
   line-height: 50px;
   font-size: 30px;
 }
+
+.loading {
+  display: block;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+}
+.loading .loading-info {
+  margin-top: 65%;
+}

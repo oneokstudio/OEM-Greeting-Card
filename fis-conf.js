@@ -4,13 +4,13 @@
  });
 
  fis.match('lib/*.js', {
-   release : 'OEM-Greeting-Card/$0',
+   release : '$&',
    useHash: false
  });
 
  fis.match('js/*.js', {
    //optimizer: fis.plugin('uglify-js'),
-   release : 'OEM-Greeting-Card/$0',
+   release : '$&',
    useHash: true
  });
 
@@ -24,13 +24,13 @@
 
  fis.match('*.css', {
    optimizer: fis.plugin('clean-css'),
-   release : 'OEM-Greeting-Card/$0',
+   release : '$&',
    useSprite: true,
    useHash: true
  });
 
  fis.match('img/*.png', {
    optimizer: fis.plugin('png-compressor'),
-   release : 'OEM-Greeting-Card/$0',
+   release : '$&',
    useHash: true
  });
