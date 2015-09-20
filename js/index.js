@@ -84,16 +84,10 @@ var main = function () {
         words = formData.words;
         refreshText();
 
-        var _url;
-        if (Query.card_id) {
-          _url = changeURLArg(location.href, 'card_id', res.card_id);
-        } else {
-          _url = location.href + '?card_id=' + res.card_id;
-        }
         WX.setShare( {
           title: '施耐德预祝您中秋快乐！',
           desc: '共享交流与探索的喜悦，共谱行业发展升级的美好图景。',
-          link: _url,
+          link: changeURLArg(location.href, 'card_id', res.card_id),
           imgUrl: 'http://studio.windra.in/OEM-Greeting-Card/img/share_icon.png'
         });
       } else {
