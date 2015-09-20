@@ -45,12 +45,12 @@ var main = function () {
     $('.feedback-container').show();
   });
 
-  //getText();
-  //animatePoem();
-  //startCloud();
-  //startLeaves();
-  //startFish();
-  //Slide.init();
+  getText();
+  animatePoem();
+  startCloud();
+  startLeaves();
+  startFish();
+  Slide.init();
 
   WX.init({
     signUrl: Server.wxConfig,
