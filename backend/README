@@ -1,0 +1,4 @@
+1. backend/submit_feedback.php: 提交反馈，需要把opt1、opt2和advice三个字段post过来，返回code和msg组成的json
+2. backend/submit_cards.php: 提交贺卡信息，需要把sender、receiver和words三个字段post过来，成功则返回code=200、card_id两个字段
+3. backend/card_share_wx.php: 获取分享所需信息的页面，返回一个包含appId、timestamp、nonceStr和signature的json
+4. backend/card_info.php: 获取贺卡信息，需要get一个card_id字段过来，成功则返回code=200、sender、receiver和words

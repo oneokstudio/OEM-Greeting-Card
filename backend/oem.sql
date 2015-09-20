@@ -1,0 +1,18 @@
+CREATE TABLE IF NOT EXISTS `feedbakcs` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `opt1` VARCHAR(10) NOT NULL,
+  `opt2` VARCHAR(10) NOT NULL,
+  `advice` TEXT,
+  `ctime` INT(11),
+  PRIMARY KEY(`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE IF NOT EXISTS `cards` (
+  `id` INT(11) NOT NULL,
+  `sender` VARCHAR(32) NOT NULL,
+  `receiver` VARCHAR(32) NOT NULL,
+  `words` TEXT NOT NULL,
+  `ctime` INT(11),
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
