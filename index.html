@@ -7,7 +7,8 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta id="vp" name="viewport" content="width=640, user-scalable=no">
+  <!--<meta id="vp" name="viewport" content="width=640, user-scalable=no">-->
+  <meta id="vp" name="viewport" content="width=device-width, user-scalable=no,maximum-scale=1.0,initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="HandheldFriendly" content="True">
@@ -135,6 +136,17 @@
 
 
 <script src="lib/jquery.min.js"></script>
+<script type="text/javascript">
+  var t = document.documentElement.offsetWidth;
+  var w = 640;
+  var sw = window.innerWidth;
+  var sca = sw/640;
+  sca=sca.toFixed(3);
+  var zoom = sca * 100;
+
+  var ua = navigator.userAgent.toLowerCase();
+  vp.content='width='+w+',initial-scale = '+sca+' ,minimum-scale='+sca+', maximum-scale='+sca;
+</script>
 <script src="lib/owl.carousel.js"></script>
 <script src="lib/rotate3Di.min.js"></script>
 <script src="lib/3d-falling-leaves.js"></script>

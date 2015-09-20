@@ -207,11 +207,11 @@ body {
   position: absolute;
   right: 50px;
   top: 245px;
-  background: #C6CBDF;
+  /*background: #C6CBDF;*/
   width: 380px;
   padding: 25px;
   box-sizing: border-box;
-  border-radius: 50px;
+  /*border-radius: 50px;*/
   z-index: 1111;
 }
 .text p {
@@ -281,15 +281,16 @@ body {
   left: 0px;
   width: 100%;
 }
-
 .lotus .lotus-1 {
   position: absolute;
-  right: -69px;
-  top: -268px;
+  right: 0px;
+  top: -142px;
+  width: 240px;
 }
 .lotus .lotus-2 {
   position: absolute;
   left: 0;
+  width: 90px;
 }
 .modal {
   display: none;
