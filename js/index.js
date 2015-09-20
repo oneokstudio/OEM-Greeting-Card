@@ -61,7 +61,7 @@ var main = function () {
       title: '施耐德预祝您中秋快乐！',
       desc: '共享交流与探索的喜悦，共谱行业发展升级的美好图景。',
       link: location.href,
-      imgUrl: './img/share_icon.png'
+      imgUrl: 'http://studio.windra.in/OEM-Greeting-Card/img/share_icon.png'
     }
   });
   $('.feedback-container').form({
@@ -94,7 +94,7 @@ var main = function () {
           title: '施耐德预祝您中秋快乐！',
           desc: '共享交流与探索的喜悦，共谱行业发展升级的美好图景。',
           link: _url,
-          imgUrl: './img/share_icon.png'
+          imgUrl: 'http://studio.windra.in/OEM-Greeting-Card/img/share_icon.png'
         });
       } else {
         alert(res.msg);
