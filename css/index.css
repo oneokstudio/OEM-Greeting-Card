@@ -382,10 +382,11 @@ body {
 }
 .loading {
   display: block;
-  background-color: #000;
+  background: #000;
   color: #fff;
   text-align: center;
   font-size: 50px;
+  position: fixed;
 }
 .loading .loading-info {
   margin-top: 65%;
@@ -393,37 +394,38 @@ body {
 
 .light {
   position: absolute;
-  width: 48px;
-  height: 48px;
+  width: 32px;
+  height: 32px;
   background: url("../img/light1.png");
+  background-size: 100% 100%;
   -webkit-animation: shining 1.5s infinite; /* Safari 4+ */
   -moz-animation:    shining 1.5s infinite; /* Fx 5+ */
   -o-animation:      shining 1.5s infinite; /* Opera 12+ */
   animation:         shining 1.5s infinite;
 }
 @-webkit-keyframes shining {
-  0% { background: url("../img/light1.png"); }
-  50% { background: url("../img/light2.png"); }
-  100% { background: url("../img/light1.png"); }
+  0% { background: url("../img/light1.png"); background-size: 100% 100%;}
+  50% { background: url("../img/light2.png"); background-size: 100% 100%;}
+  100% { background: url("../img/light1.png"); background-size: 100% 100%;}
 }
 @keyframes shining {
-  0% { background: url("../img/light1.png"); }
-  50% { background: url("../img/light2.png"); }
-  100% { background: url("../img/light1.png"); }
+  0% { background: url("../img/light1.png"); background-size: 100% 100%;}
+  50% { background: url("../img/light2.png"); background-size: 100% 100%;}
+  100% { background: url("../img/light1.png"); background-size: 100% 100%;}
 }
 .light-3 {
-  left: 80px;
-  bottom: 173px;
+  left: 87px;
+  bottom: 180px;
 }
 .light-2 {
   left: 20px;
   bottom: 400px;
 }
 .light-1 {
-  left: 40px;
-  bottom: 700px;
+  left: 33px;
+  bottom: 708px;
 }
 .light-4 {
-  left: 14px;
-  bottom: 8px;
+  left: 11px;
+  bottom: 26px;
 }

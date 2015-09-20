@@ -45,12 +45,12 @@ var main = function () {
     $('.feedback-container').show();
   });
 
-  getText();
-  animatePoem();
-  startCloud();
-  startLeaves();
-  startFish();
-  Slide.init();
+  //getText();
+  //animatePoem();
+  //startCloud();
+  //startLeaves();
+  //startFish();
+  //Slide.init();
 
   WX.init({
     signUrl: Server.wxConfig,
@@ -75,14 +75,22 @@ var main = function () {
     success: function (res, formData) {
       if (res.code == 200) {
         alert('创建成功！点击右上角分享给好友吧~');
+        $('.feedback-container').hide();
         sender = formData.sender;
         receiver = formData.receiver;
         words = formData.words;
         refreshText();
+
+        var _url;
+        if (Query.card_id) {
+          _url = changeURLArg(location.href, 'card_id', res.card_id);
+        } else {
+          _url = location.href + '?card_id=' + res.card_id;
+        }
         WX.setShare( {
           title: '施耐德预祝您中秋快乐！',
           desc: '共享交流与探索的喜悦，共谱行业发展升级的美好图景。',
-          link: location.href + '?card_id=' + res.card_id,
+          link: _url,
           imgUrl: './img/share_icon.png'
         });
       } else {
@@ -156,7 +164,7 @@ var main = function () {
             words = res.words;
             refreshText();
           } else {
-           alert(res.msg);
+           //alert(res.msg);
           }
         }
       });
@@ -166,5 +174,22 @@ var main = function () {
     $('.text .receiver').html(receiver);
     $('.text .text-content').html(words);
     $('.text .sender').html(sender);
+  }
+
+  function changeURLArg(url,arg,arg_val){
+    var pattern=arg+'=([^&]*)';
+    var replaceText=arg+'='+arg_val;
+    if(url.match(pattern)){
+      var tmp='/('+ arg+'=)([^&]*)/gi';
+      tmp=url.replace(eval(tmp),replaceText);
+      return tmp;
+    }else{
+      if(url.match('[\?]')){
+        return url+'&'+replaceText;
+      }else{
+        return url+'?'+replaceText;
+      }
+    }
+    return url+'\n'+arg+'\n'+arg_val;
   }
 }
