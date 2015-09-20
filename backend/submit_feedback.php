@@ -36,10 +36,9 @@ if (check_input()) {
 // 判断输入是否合法
 function check_input() {
     if (isset($_POST['opt1']) && isset($_POST['opt2']) && isset($_POST['advice'])) {
-        return true;
-//        if ($_POST['opt1'] >= 'A' && $_POST['opt1'] <= 'D' && $_POST['opt2'] >= 'A' && $_POST['opt2'] <= 'D')
-//            return true;
-//        return false;
+        if ($_POST['opt1'] >= 'A' && $_POST['opt1'] <= 'D' && $_POST['opt2'] >= 'A' && $_POST['opt2'] <= 'D')
+            return true;
+        return false;
     }
     return false;
 }
