@@ -24,7 +24,7 @@ var main = function () {
   });
 
   animatePoem();
-  startRipples();
+  //startRipples();
   startCloud();
   startLeaves();
   startFish();

@@ -26,6 +26,8 @@ var sources = [
   './img/photos/2.jpg'
 ]
 loadImg(sources, main);
+//$('.loading').hide();
+//main();
 
 function loadImg(sources, callback){
   var _imgList = [], _img = null;
