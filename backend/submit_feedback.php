@@ -24,7 +24,7 @@ if (check_input()) {
         $db = null;
         echo json_encode(['code' => '200', 'msg' => '提交成功']);
     } catch (PDOException $e) {
-        echo $e->errorInfo;
+        print_r($e->errorInfo);
         echo json_encode(['code' => '500', 'msg' => '服务器繁忙，请稍后重试']);
         die();
     }
