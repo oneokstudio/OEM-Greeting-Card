@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/reset.css"/>
   <link rel="stylesheet" href="css/owl.carousel.css"/>
   <link rel="stylesheet" href="css/index.css"/>
+  <title>施耐德预祝您中秋快乐！</title>
 </head>
 <body>
 <div class="wrapper">
@@ -24,6 +25,9 @@
     <li id="menu1"><img src="img/bamboo1.png" alt=""/></li>
     <li id="menu2"><img src="img/bamboo2.png" alt=""/></li>
     <li id="menu3"><img src="img/bamboo3.png" alt=""/></li>
+    <div class="light light-1"></div>
+    <div class="light light-2"></div>
+    <div class="light light-3"></div>
   </ul>
   <div class="leave-right"><img src="img/bamboo.png" alt=""/></div>
 
@@ -72,6 +76,7 @@
     <img id="stone1" src="img/stone1.png"/>
     <img id="stone2" src="img/stone2.png"/>
     <img id="stone3" src="img/stone3.png"/>
+    <div class="light light-4"></div>
   </div>
 
   <div id="fishContainer">
@@ -127,21 +132,21 @@
     </div>
     <div class="form-group first">
       <label>1、在不久前的“智见2015” OEM 企业家俱乐部沙龙活动上，您对哪一类话题最感兴趣？</label>
-      <input type="radio" class="form-control" name="question1" value="A" checked/>A 智能设备解决方案<br/>
-      <input type="radio" class="form-control" name="question1" value="B"/>B 精益生产<br/>
-      <input type="radio" class="form-control" name="question1" value="C"/>C 提升能效管理水平<br/>
-      <input type="radio" class="form-control" name="question1" value="D"/>D 供应链服务支持<br/>
+      <input type="radio" class="form-control" name="opt1" value="A" checked/>A 智能设备解决方案<br/>
+      <input type="radio" class="form-control" name="opt1" value="B"/>B 精益生产<br/>
+      <input type="radio" class="form-control" name="opt1" value="C"/>C 提升能效管理水平<br/>
+      <input type="radio" class="form-control" name="opt1" value="D"/>D 供应链服务支持<br/>
     </div>
     <div class="form-group">
       <label>2、当前您最需要在哪方面得到提升和改善？</label>
-      <input type="radio" class="form-control" name="question2" value="A" checked/>A 产品性能及结构<br/>
-      <input type="radio" class="form-control" name="question2" value="B"/>B 设备调试和技术服务<br/>
-      <input type="radio" class="form-control" name="question2" value="C"/>C 软件和 IT 能力<br/>
-      <input type="radio" class="form-control" name="question2" value="D"/>D 资金和供应链<br/>
+      <input type="radio" class="form-control" name="opt2" value="A" checked/>A 产品性能及结构<br/>
+      <input type="radio" class="form-control" name="opt2" value="B"/>B 设备调试和技术服务<br/>
+      <input type="radio" class="form-control" name="opt2" value="C"/>C 软件和 IT 能力<br/>
+      <input type="radio" class="form-control" name="opt2" value="D"/>D 资金和供应链<br/>
     </div>
     <div class="form-group">
       <label>3、参加此次活动后，您有哪些感受？您认为活动有哪些值得改进的地方？</label>
-      <textarea name="feedback" id="feedback" class="form-control" data-name="反馈" cols="30" rows="10"></textarea>
+      <textarea name="advice" id="feedback" class="form-control" data-name="反馈" cols="30" rows="10"></textarea>
     </div>
 
     <div class="btn btn-submit">提交</div>
@@ -152,13 +157,13 @@
       <img src="img/modal_bg.png" alt=""/>
     </div>
     <div class="form-group first">
-      <input type="text" id="custom-sender" class="form-control" data-name="寄信人" placeholder="寄信人名称"/>
+      <input name="sender" type="text" id="custom-sender" class="form-control" data-name="寄信人" placeholder="寄信人名称"/>
     </div>
     <div class="form-group">
-      <input type="text" id="custom-receiver" class="form-control" data-name="收信人" placeholder="收信人名称"/>
+      <input name="receiver" type="text" id="custom-receiver" class="form-control" data-name="收信人" placeholder="收信人名称"/>
     </div>
     <div class="form-group">
-      <textarea name="" id="custom-greeting" class="form-control" data-name="祝福语" data-length="100"
+      <textarea name="words" id="custom-greeting" class="form-control" data-name="祝福语" data-length="100"
                 cols="30" rows="10" placeholder="在此填下您的祝福语吧~长度不能超过100字哦~"
                 style="height: 300px;"></textarea>
     </div>

@@ -390,3 +390,40 @@ body {
 .loading .loading-info {
   margin-top: 65%;
 }
+
+.light {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background: url("../img/light1.png");
+  -webkit-animation: shining 1.5s infinite; /* Safari 4+ */
+  -moz-animation:    shining 1.5s infinite; /* Fx 5+ */
+  -o-animation:      shining 1.5s infinite; /* Opera 12+ */
+  animation:         shining 1.5s infinite;
+}
+@-webkit-keyframes shining {
+  0% { background: url("../img/light1.png"); }
+  50% { background: url("../img/light2.png"); }
+  100% { background: url("../img/light1.png"); }
+}
+@keyframes shining {
+  0% { background: url("../img/light1.png"); }
+  50% { background: url("../img/light2.png"); }
+  100% { background: url("../img/light1.png"); }
+}
+.light-3 {
+  left: 80px;
+  bottom: 173px;
+}
+.light-2 {
+  left: 20px;
+  bottom: 400px;
+}
+.light-1 {
+  left: 40px;
+  bottom: 700px;
+}
+.light-4 {
+  left: 14px;
+  bottom: 8px;
+}
