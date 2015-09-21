@@ -34,9 +34,9 @@
     <li id="menu1"><img src="img/bamboo1.png" alt=""/></li>
     <li id="menu2"><img src="img/bamboo2.png" alt=""/></li>
     <li id="menu3"><img src="img/bamboo3.png" alt=""/></li>
-    <div class="light light-1"></div>
-    <div class="light light-2"></div>
-    <div class="light light-3"></div>
+    <div class="light light-1"><span>佳景</span></div>
+    <div class="light light-2"><span>寄意</span></div>
+    <div class="light light-3"><span>回音</span></div>
   </ul>
   <div class="leave-right"><img src="img/bamboo.png" alt=""/></div>
 
@@ -59,6 +59,17 @@
       <img class="owl-lazy" style="width:250px" data-src="img/photos/3.jpg" alt="">
       <img class="owl-lazy" style="width:250px" data-src="img/photos/4.jpg" alt="">
       <img class="owl-lazy" style="width:250px" data-src="img/photos/5.jpg" alt="">
+      <img class="owl-lazy" style="width:250px" data-src="img/photos/6.jpg" alt="">
+      <img class="owl-lazy" style="width:250px" data-src="img/photos/7.jpg" alt="">
+      <img class="owl-lazy" style="width:250px" data-src="img/photos/8.jpg" alt="">
+      <img class="owl-lazy" style="width:250px" data-src="img/photos/9.jpg" alt="">
+      <img class="owl-lazy" style="width:250px" data-src="img/photos/10.jpg" alt="">
+      <img class="owl-lazy" style="width:250px" data-src="img/photos/11.jpg" alt="">
+      <img class="owl-lazy" style="width:250px" data-src="img/photos/12.jpg" alt="">
+      <img class="owl-lazy" style="width:250px" data-src="img/photos/13.jpg" alt="">
+      <img class="owl-lazy" style="width:250px" data-src="img/photos/14.jpg" alt="">
+      <img class="owl-lazy" style="width:250px" data-src="img/photos/15.jpg" alt="">
+      <img class="owl-lazy" style="width:250px" data-src="img/photos/16.jpg" alt="">
     </div>
   </div>
 
@@ -70,22 +81,24 @@
     </div>
   </div>
 
-  <div class="text">
+  <div class="text text-1">
     <p class="receiver">尊敬的 公司 总经理：</p>
     <p>您好！</p>
-    <p class="text-content">
-      感谢您拨冗莅临『智见2015』施耐德电气OEM企业家俱乐部沙龙活动，和我们共享交流与探索的喜悦。
-      我们今后也将与您共谱行业发展升级的美好图景，愿与您明年再会！
-      值此中秋佳节之际，祝您阖家团圆，万事如意！
-    </p>
-    <p class="sender">施耐德电气工业事业部 行业销售经理</p>
+    <p class="text-content">感谢您拨冗莅临『智见2015』施耐德电气OEM企业家俱乐部沙龙活动，和我们共享交流与探索的喜悦。我们今后也将与您共谱行业发展升级的美好图景，愿与您明年再会！值此中秋佳节之际，祝您阖家团圆，万事如意！</p>
+    <p class="sender">施耐德电气工业事业部</p>
+  </div>
+  <div class="text text-2">
+    <p class="receiver"></p>
+    <p>您好！</p>
+    <p class="text-content"></p>
+    <p class="sender"></p>
   </div>
 
   <div class="lake">
     <img id="stone1" src="img/stone1.png"/>
     <img id="stone2" src="img/stone2.png"/>
     <img id="stone3" src="img/stone3.png"/>
-    <div class="light light-4"></div>
+    <div class="light light-4"><span>分享</span></div>
   </div>
 
   <div id="fishContainer">
@@ -165,17 +178,21 @@
     <div class="modal-bg">
       <img src="img/modal_bg.png" alt=""/>
     </div>
+    <div class="form-group">
+      <input name="receiver" type="text" id="custom-receiver" class="form-control" data-name="收信人" placeholder="收信人名称"/>
+    </div>
     <div class="form-group first">
       <input name="sender" type="text" id="custom-sender" class="form-control" data-name="寄信人" placeholder="寄信人名称"/>
     </div>
     <div class="form-group">
-      <input name="receiver" type="text" id="custom-receiver" class="form-control" data-name="收信人" placeholder="收信人名称"/>
-    </div>
-    <div class="form-group">
-      <textarea name="words" id="custom-greeting" class="form-control" data-name="祝福语" data-length="100"
+      <textarea name="words" id="custom-words" class="form-control" data-name="祝福语" data-length="100"
                 cols="30" rows="10" placeholder="在此填下您的祝福语吧~长度不能超过100字哦~" style="height: 300px;"></textarea>
     </div>
+    <div class="btn btn-preview">预览</div>
     <div class="btn btn-submit">提交</div>
+    <div class="modal-close">X</div>
+  </div>
+  <div class="preview-modal modal">
     <div class="modal-close">X</div>
   </div>
   <div class="loading modal">
@@ -184,6 +201,7 @@
   <div class="share-mask">
     <span class="share-tip"></span>
   </div>
+  <audio id="audio" src="res/bgm.mp3" loop preload="auto" autoplay="true"></audio>
 </div>
 
 
@@ -198,6 +216,11 @@
 
   var ua = navigator.userAgent.toLowerCase();
   vp.content='width='+w+',initial-scale = '+sca+' ,minimum-scale='+sca+', maximum-scale='+sca;
+
+  var audio = document.getElementById('audio');
+  $("html").on("click", function() {
+    audio.play();
+  })
 </script>
 <script src="lib/owl.carousel.js"></script>
 <script src="lib/rotate3Di.min.js"></script>

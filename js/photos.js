@@ -1,7 +1,7 @@
 function startCarousel () {
   var owl = $("#carouselContainer");
   var currentIndex = 3;
-  var currentSrc = './img/photos/1.jpg';
+  var currentSrc = './img/photos/1-lg.jpg';
   var $imgDetail = $('#imgDetail');
   var $currentImgDom = $imgDetail.find('.current-img');
 
@@ -20,6 +20,7 @@ function startCarousel () {
   owl.on('changed.owl.carousel', function (property) {
     currentIndex = property.item.index;
     currentSrc = $(property.target).find(".owl-item").eq(currentIndex).find("img").attr('src');
+    currentSrc = currentSrc.substring(0, currentSrc.length-4) + '-lg.jpg';
     showImgDetail();
   });
 

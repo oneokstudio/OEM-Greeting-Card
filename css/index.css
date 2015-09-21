@@ -199,7 +199,7 @@ body {
 .poem {
   display: block;
   margin-top: 67px;
-  margin-right: 53px;
+  margin-left: 64px;
 }
 .poem .v-item {
   width: 20px;
@@ -220,7 +220,7 @@ body {
   z-index: 1111;
 }
 .text p {
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 .text .text-content {
   margin: 30px auto;
@@ -230,7 +230,7 @@ body {
   overflow: hidden;
 }
 .vertical .v-item {
-  float: right;
+  float: left;
 }
 .vertical .v-item-space {
   width: 20px;
@@ -380,6 +380,7 @@ body {
   font-size: 30px;
   border-radius: 5px;
   padding: 5px;
+  margin-bottom: 30px;
 }
 .loading {
   display: block;
@@ -430,6 +431,12 @@ body {
   left: 11px;
   bottom: 26px;
 }
+.light span {
+  position: absolute;
+  width: 50px;
+  color: #fff;
+  top: 100%;
+}
 
 .share-mask {
   position: fixed;
@@ -449,4 +456,11 @@ body {
   height: 210px;
   top: 50px;
   right: 50px;
+}
+.text-2 {
+  display: none;
+}
+.preview-modal {
+  display: none;
+  background: transparent;
 }

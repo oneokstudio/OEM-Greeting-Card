@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta id="vp" name="viewport" content="width=device-width, user-scalable=no,maximum-scale=1.0,initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+
+  <link rel="stylesheet" href="css/reset.css"/>
+  <link rel="stylesheet" href="css/owl.carousel.css"/>
+  <link rel="stylesheet" href="css/index.css"/>
+  <title>施耐德预祝您中秋快乐！</title>
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?c0a600523adaeba4a142db385a16ab0b";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+</head>
+<body>
+<div class="wrapper">
+
+  <ul class="sidebar">
+    <li id="menu1"><img src="img/bamboo1.png" alt=""/></li>
+    <li id="menu2"><img src="img/bamboo2.png" alt=""/></li>
+    <li id="menu3"><img src="img/bamboo3.png" alt=""/></li>
+    <div class="light light-1"></div>
+    <div class="light light-2"></div>
+    <div class="light light-3"></div>
+  </ul>
+  <div class="leave-right"><img src="img/bamboo.png" alt=""/></div>
+
+  <div class="cloud"></div>
+
+  <div id="carouselOuterContainer">
+    <div class="poem vertical">
+      <p class="v-item">施情画意月初圆</p>
+      <p class="v-item">家合人美乐悠然</p>
+      <p class="v-item">祝君常闻团圆曲</p>
+      <p class="v-item">福缘悠长似甘泉</p>
+      <p class="v-item">中华胜景犹描绘</p>
+      <p class="v-item">秋意繁荣作畅谈</p>
+      <p class="v-item">快马追云勤抖擞</p>
+      <p class="v-item">乐看胜景奏凯旋</p>
+    </div>
+  </div>
+
+  <div class="text">
+    <p class="receiver">尊敬的 公司 总经理：</p>
+    <p>您好！</p>
+    <p class="text-content">
+      感谢您拨冗莅临『智见2015』施耐德电气OEM企业家俱乐部沙龙活动，和我们共享交流与探索的喜悦。
+      我们今后也将与您共谱行业发展升级的美好图景，愿与您明年再会！
+      值此中秋佳节之际，祝您阖家团圆，万事如意！
+    </p>
+    <p class="sender">施耐德电气工业事业部</p>
+  </div>
+
+  <div class="lake">
+    <img id="stone1" src="img/stone1.png"/>
+    <img id="stone2" src="img/stone2.png"/>
+    <img id="stone3" src="img/stone3.png"/>
+    <div class="light light-4"><span>分享</span></div>
+  </div>
+
+  <div id="fishContainer">
+    <div id="fish"></div>
+  </div>
+  <div class="lotus">
+    <img src="img/lotus1.png" alt="" class="lotus-1"/>
+    <img src="img/lotus2.png" alt="" class="lotus-2"/>
+  </div>
+  <div class="loading modal">
+    <p class="loading-info"></p>
+  </div>
+  <div class="share-mask">
+    <span class="share-tip"></span>
+  </div>
+  <audio id="audio" src="res/bgm.mp3" loop preload="auto" autoplay="true"></audio>
+</div>
+
+
+<script src="lib/jquery.min.js"></script>
+<script type="text/javascript">
+  var t = document.documentElement.offsetWidth;
+  var w = 640;
+  var sw = window.innerWidth;
+  var sca = sw/640;
+  sca=sca.toFixed(3);
+  var zoom = sca * 100;
+
+  var ua = navigator.userAgent.toLowerCase();
+  vp.content='width='+w+',initial-scale = '+sca+' ,minimum-scale='+sca+', maximum-scale='+sca;
+
+  var audio = document.getElementById('audio');
+  $("html").on("click", function() {
+    audio.play();
+  })
+</script>
+<script src="lib/sprite.js"></script>
+<script src="lib/rotate3Di.min.js"></script>
+<script src="lib/3d-falling-leaves.js"></script>
+<script src="lib/wx/jweixin-1.0.0.js"></script>
+<script src="lib/wx/wx.js"></script>
+<script src="js/common.js"></script>
+<script src="js/loader.js"></script>
+</body>
+</html>
