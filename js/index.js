@@ -27,6 +27,7 @@ var main = function () {
 
   $('.wrapper').height(windowH);
   $('.text').css({top: (windowH - 292 - 460)/2 + 292 - $('.text').height()/2});
+  $('#custom-greeting').val('感谢您拨冗莅临『智见2015』施耐德电气OEM企业家俱乐部沙龙活动，和我们共享交流与探索的喜悦。我们今后也将与您共谱行业发展升级的美好图景，愿与您明年再会！值此中秋佳节之际，祝您阖家团圆，万事如意！')
 
   $('.poem').click(function () {
     startCarousel();
