@@ -63,11 +63,11 @@ var main = function () {
     $('.share-mask').show();
   });
 
-  getText();
+  //getText();
   animatePoem();
-  startCloud();
-  startLeaves();
-  startFish();
+  //startCloud();
+  //startLeaves();
+  //startFish();
   Slide.init();
 
   WX.init({
@@ -125,7 +125,6 @@ var main = function () {
     $('.preview-modal').show();
   });
   $('.preview-modal .modal-close').click(function () {
-    console.log(222);
     $('.text-1').show();
     $('.text-2').hide();
     $('.custom-container').show();
