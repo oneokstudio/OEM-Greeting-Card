@@ -76,7 +76,7 @@ var main = function () {
     }
   });
   $('.btn-preview').click(function () {
-    var sender = $('#custom-sender').val();
+    var sender = '施耐德电气工业事业部 ' + $('#custom-sender').val();
     var receiver = $('#custom-receiver').val();
     var words = $('#custom-words').val();
     var $previewText = $('.text-2');
@@ -170,7 +170,7 @@ var main = function () {
   function refreshText() {
     $('.text-1 .receiver').html(receiver);
     $('.text-1 .text-content').html(words);
-    $('.text-1 .sender').html(sender);
+    $('.text-1 .sender').html('施耐德电气工业事业部 ' + sender);
   }
 
   function changeURLArg(url,arg,arg_val){
