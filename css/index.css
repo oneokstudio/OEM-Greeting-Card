@@ -134,7 +134,12 @@ body {
   margin-left: -96px;
   width: 192px;
   height: 60px;
-  background: url("../img/btn_tbc.png");
+  background-color: #7F7F7F;
+  border-radius: 30px;
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+  font-size: 30px;
 }
 
 

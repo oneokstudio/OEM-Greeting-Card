@@ -66,6 +66,10 @@ var main = function () {
   startFish();
   Slide.init();
 
+  setTimeout(function () {
+    startCarousel();
+  }, 1500*8+4000);
+
   WX.init({
     signUrl: Server.wxConfig,
     share: {
