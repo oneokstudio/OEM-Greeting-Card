@@ -35,7 +35,7 @@
     <li id="menu2"><img src="img/bamboo2.png" alt=""/></li>
     <li id="menu3"><img src="img/bamboo3.png" alt=""/></li>
     <div class="light light-1"></div>
-    <div class="light light-2"></div>
+    <div class="light light-2"><span>寄意</span></div>
     <div class="light light-3"></div>
   </ul>
   <div class="leave-right"><img src="img/bamboo.png" alt=""/></div>
@@ -55,15 +55,17 @@
     </div>
   </div>
 
-  <div class="text">
+  <div class="text text-1">
     <p class="receiver">尊敬的 公司 总经理：</p>
     <p>您好！</p>
-    <p class="text-content">
-      感谢您拨冗莅临『智见2015』施耐德电气OEM企业家俱乐部沙龙活动，和我们共享交流与探索的喜悦。
-      我们今后也将与您共谱行业发展升级的美好图景，愿与您明年再会！
-      值此中秋佳节之际，祝您阖家团圆，万事如意！
-    </p>
+    <p class="text-content">值此中秋佳节之际，施耐德电气工业事业部祝您中秋快乐，阖家团圆！</p>
     <p class="sender">施耐德电气工业事业部</p>
+  </div>
+  <div class="text text-2">
+    <p class="receiver"></p>
+    <p>您好！</p>
+    <p class="text-content"></p>
+    <p class="sender"></p>
   </div>
 
   <div class="lake">
@@ -80,6 +82,29 @@
     <img src="img/lotus1.png" alt="" class="lotus-1"/>
     <img src="img/lotus2.png" alt="" class="lotus-2"/>
   </div>
+
+  <div class="custom-container modal">
+    <div class="modal-bg">
+      <img src="img/modal_bg.png" alt=""/>
+    </div>
+    <div class="form-group first">
+      <input name="receiver" type="text" id="custom-receiver" class="form-control" data-name="收信人" placeholder="收信人"/>
+    </div>
+    <div class="form-group">
+      <textarea name="words" id="custom-words" class="form-control" data-name="祝福语" data-length="100"
+                cols="30" rows="10" placeholder="在此填下您的祝福语吧~长度不能超过100字哦~" style="height: 300px;"></textarea>
+    </div>
+    <div class="form-group">
+      <input name="sender" type="text" id="custom-sender" class="form-control" data-name="寄信人" placeholder="寄信人" style="text-align: right"/>
+    </div>
+    <div class="btn btn-preview">预览</div>
+    <div class="btn btn-submit">提交</div>
+    <div class="modal-close">关闭</div>
+  </div>
+  <div class="preview-modal modal">
+    <div class="modal-close">返回</div>
+  </div>
+
   <div class="loading modal">
     <p class="loading-info"></p>
   </div>
@@ -112,6 +137,7 @@
 <script src="lib/3d-falling-leaves.js"></script>
 <script src="lib/wx/jweixin-1.0.0.js"></script>
 <script src="lib/wx/wx.js"></script>
+<script src="lib/form.js"></script>
 <script src="js/common.js"></script>
 <script src="js/loader.js"></script>
 </body>

@@ -38,14 +38,10 @@ var main = function () {
     $('.slide').show();
   });
   $('#menu2').click(function () {
-    $('#custom-sender').val($('.text-1 .sender').html());
-    $('#custom-receiver').val($('.text-1 .receiver').html());
     $('#custom-words').val($('.text-1 .text-content').html());
     $('.custom-container').show();
   });
   $('.light-2').click(function () {
-    $('#custom-sender').val($('.text-1 .sender').html());
-    $('#custom-receiver').val($('.text-1 .receiver').html());
     $('#custom-words').val($('.text-1 .text-content').html());
     $('.custom-container').show();
   });
@@ -73,7 +69,7 @@ var main = function () {
   WX.init({
     signUrl: Server.wxConfig,
     share: {
-      title: '施耐德预祝您中秋快乐！',
+      title: '施耐德电气预祝您中秋快乐！',
       desc: '共享交流与探索的喜悦，共谱行业发展升级的美好图景。',
       link: location.href,
       imgUrl: 'http://studio.windra.in/OEM-Greeting-Card/img/share_icon.png'
@@ -100,7 +96,7 @@ var main = function () {
         refreshText();
 
         WX.setShare( {
-          title: '施耐德预祝您中秋快乐！',
+          title: '施耐德电气预祝您中秋快乐！',
           desc: '共享交流与探索的喜悦，共谱行业发展升级的美好图景。',
           link: changeURLArg(location.href, 'card_id', res.card_id),
           imgUrl: 'http://studio.windra.in/OEM-Greeting-Card/img/share_icon.png'

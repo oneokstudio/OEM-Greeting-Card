@@ -218,6 +218,7 @@ body {
   box-sizing: border-box;
   /*border-radius: 50px;*/
   z-index: 1111;
+  font-family: "STKaiti";
 }
 .text p {
   /*text-decoration: underline;*/
@@ -267,17 +268,18 @@ body {
 }
 .slide-close, .modal-close {
   position: fixed;
-  font-size: 30px;
+  font-size: 22px;
   color: #fff;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
   text-align: center;
   border-radius: 50%;
   z-index: 111111;
   top: 43px;
   left: 23px;
-  background-color: #333;
+  background-color: rgba(51, 51, 51, 0.89);
+  padding: 5px;
 }
 .slide-go-feedback {
   position: absolute;
@@ -339,7 +341,7 @@ body {
   font-size: 20px;
 }
 .form-group.first {
-  margin-top: 100px;
+  margin-top: 140px;
 }
 .form-group label {
   display: block;
@@ -433,9 +435,10 @@ body {
 }
 .light span {
   position: absolute;
-  width: 50px;
+  width: 60px;
   color: #fff;
   top: 100%;
+  font-size: 20px;
 }
 
 .share-mask {
