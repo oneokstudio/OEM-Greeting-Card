@@ -279,9 +279,6 @@ body {
   left: 23px;
   background-color: #333;
 }
-.slide-close {
-  position: absolute;
-}
 .slide-go-feedback {
   position: absolute;
   width: 100px;
