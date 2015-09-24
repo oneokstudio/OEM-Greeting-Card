@@ -86,12 +86,14 @@ var main = function () {
 
     $('.text-1').hide();
     $previewText.show();
+    $('.preview-tip').show();
     $('.custom-container').hide();
     $('.preview-modal').show();
   });
   $('.preview-modal .modal-close').click(function () {
     $('.text-1').show();
     $('.text-2').hide();
+    $('.preview-tip').hide();
     $('.custom-container').show();
     $('.preview-modal').hide();
   });

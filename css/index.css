@@ -472,3 +472,13 @@ body {
   display: none;
   background: transparent;
 }
+.preview-tip {
+  width: 387px;
+  height: 42px;
+  background: url("../img/tip.jpg");
+  background-size: 100% 100%;
+  position: absolute;
+  right: -68px;
+  top: 28px;
+  display: none;
+}
