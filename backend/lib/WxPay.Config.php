@@ -27,10 +27,10 @@ class WxPayConfig
 	 * @var string
 	 */
 
-	const APPID = 'wxb2b28f20d3f8a6e3';
+	const APPID = 'wx73415e798dc79963';
 	const APPSECRET = '14a128c38f879e2f95b4db38db6e9536';
-	const ENCODINGAESKEY = 'b50OmEVMUgRckSCR7pPhMuqDsMsNOcPZFXtLooqA46f';
-	const TOKEN = 'chuangrui';
+	const ENCODINGAESKEY = 'VlQPbHkzm83uarMmkGpKqqgu7koLUuOiJg3hyj1woLQ';
+	const TOKEN = 'VankeHouseKeeper8888';
 
 	const MCHID = '商户ID值';
 	const KEY = '商户支付密钥值';

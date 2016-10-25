@@ -54,7 +54,7 @@ try {
     $objWriter = PHPExcel_IOFactory::createWriter($excel, 'Excel2007');
     $objWriter->save($filename);
 
-    
+
     $db = null;
 } catch (PDOException $e) {
     echo "can't connect to mysql";
